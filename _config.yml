@@ -11,7 +11,7 @@ email: desireevogtlee@gmail.com
 description: I love my cat, miso.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://desireevl.github.io" # the base hostname & protocol for your site
-twitter_username: desireevl 
+twitter_username: desireevogtlee 
 github_username:  desireevl
 paginate: 5
 

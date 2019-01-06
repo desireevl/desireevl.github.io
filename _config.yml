@@ -7,8 +7,8 @@
 
 # Site settings
 title: Desiree Vogt-Lee
-email: desireevogtlee@gmail.com
-description: I love my cat, miso.
+# email: desireevogtlee@gmail.com
+description: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://desireevl.github.io" # the base hostname & protocol for your site
 twitter_username: desireevogtlee 

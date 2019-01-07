@@ -7,4 +7,6 @@ categories: archive
 
 How to book fold
 
-![Book Folding](/images/book_1.jpg){:class="img-responsive" }{: .center-image }
+<p align="center">
+<a href=""><img src="/images/book_folding/book_1.jpg" title="Example Image Link" width="600" height="400" /></a> 
+</p>

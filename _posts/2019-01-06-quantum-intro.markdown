@@ -33,7 +33,7 @@ When the X transform is applied to the standard basis, the results are simply th
 <a><img src="/images/intro_unitary/X1.png" title="X1 Matrix" width="276.3" height="57.3" /></a> 
 </p>
 
-This gate performs a rotation about the x axis by &#960; which is seen on the following Bloch sphere when applied to 0 basis state.
+This gate performs a rotation about the x axis by &#960; radians, which is seen on the following Bloch sphere when applied to 0 basis state.
 
 <p align="center">
 <a><img src="/images/intro_unitary/X.gif" title="X Bloch Sphere" width="400" height="400" /></a> 

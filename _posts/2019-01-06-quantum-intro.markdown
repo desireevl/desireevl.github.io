@@ -1,23 +1,24 @@
 ---
 layout: post
-title:  "Introduction to Quantum Unitary Operations WIP"
-date:   2019-01-06
+title:  "Introduction to Quantum Unitary Operations"
+date:   2019-02-23
 categories: archive
 ---
 
+Simply put, quantum computing comprises of manipulating qubits and then measuring the outcome. Any manipulation of a qubit must be performed by a unitary operator in order for it to be implemented on a quantum computer. 
 
-### What is a unitary matrix?
-A matrix is unitary if its conjugate transpose is equal to its inverse, also written in the following form where I is the identity matrix:
+### What is a unitary operator?
+A unitary operator can be represented as a matrix, in which its conjugate transpose is equal to its inverse, also written in the following form where I is the identity matrix:
 <p align="center">
 <a><img src="/images/intro_unitary/unitary.png" title="Unitary" width="80.4" height="31.2" /></a> 
 </p>
 
-<!-- what are the gates how do they link to these matrix -->
+The quantum gates must be unitary as these kinds of operations are reversible and preserve normalisation of the quantum states allowing the states to remain on the surface of the Bloch sphere after the transformation (which we'll see shortly).
 
-Here I will introduce the basic unitary operators used in quantum computing, outlining the mathematical operations, visualisation of their effect on the Bloch sphere as well as how they can be implemented on a quantum computer.
+Here I will introduce the basic unitary operators used in quantum computing, outlining the mathematical operations, visualisation of their effect on the Bloch sphere as well as how they can be implemented on a quantum computer. 
 
-### Pauli X 
-The X gate is a bit flip operator, similar to the classical NOT gate. Its matrix representation is as follows:
+### Pauli X
+The simplest gate is the Pauli X gate, which performs a bit flip operation, similar to the classical NOT gate. Its matrix representation is as follows:
 
 <p align="center">
 <a><img src="/images/intro_unitary/X.png" title="X Matrix" width="108" height="57.3" /></a> 
@@ -39,21 +40,22 @@ This gate performs a rotation about the x axis by &#960; radians, which is seen 
 <a><img src="/images/intro_unitary/X.gif" title="X Bloch Sphere" width="400" height="400" /></a> 
 </p>
 
-The circuit to implement the X transform consists of only the gate itself and a measurement gate. The hyperlink in the image will take you to the IBM Q composer where you can run the circuit on a quantum computer/simluator and view the results.
+The circuit to implement the X transform consists of only the gate itself and a measurement gate. You can click on the circuit to go to the IBM Q composer where you can run the circuit on a quantum computer/simluator and view the results.
 
 <p align="center">
 <a href="https://quantumexperience.ng.bluemix.net/share/code/5c3202c3a5a3280056c8a791"><img src="/images/intro_unitary/X_circuit.png" title="X gate circuit" width="500" height="150" /></a> 
 </p>
 
 
-
 ### Pauli Z
 
-In contrast to the X gate, the Z gate is a phase flip operator, with no corresponding classical gate.
+In contrast to the X gate, the Z gate is a phase flip operator, with no corresponding classical gate. It is represented in matrix form as:
 
 <p align="center">
 <a><img src="/images/intro_unitary/Z.png" title="Z Matrix" width="108" height="57.3" /></a> 
 </p>
+
+Applying the Z gate to &#124;0&#9002; and &#124;1&#9002;, we see that the gate has no effect on the &#124;0&#9002; state and simply adds a negative sign in front of the &#124;1&#9002; state:
 
 <p align="center">
 <a><img src="/images/intro_unitary/Z0.png" title="Z0 Matrix" width="286.5" height="57.3" /></a> 
@@ -63,10 +65,13 @@ In contrast to the X gate, the Z gate is a phase flip operator, with no correspo
 <a><img src="/images/intro_unitary/Z1.png" title="Z1 Matrix" width="326.7" height="57.3" /></a> 
 </p>
 
+The effects of the Z gate can be seen when applied to the &#124;+&#9002; state in the following visualisation, where a rotation of  &#960; about the z axis occurs. After the transformation, the final state is &#124;-&#9002;, and when measured, still has an equal probability of being 0 or 1.
+
 <p align="center">
 <a><img src="/images/intro_unitary/Z_one.gif" title="Z Bloch Sphere" width="400" height="400" /></a> 
 </p>
 
+The first below executes the Z gate on &#124;0&#9002; and the second circuit on the superposition state &#124;+&#9002;:
 <p align="center">
 <a href="https://quantumexperience.ng.bluemix.net/share/code/5c328b1e997f7c00550401bd"><img src="/images/intro_unitary/Z_circ.png" title="Z gate circuit" width="500" height="150" /></a> 
 </p>
@@ -76,8 +81,8 @@ In contrast to the X gate, the Z gate is a phase flip operator, with no correspo
 </p>
 
 ### Pauli Y
+The Y gate can be written as the following matrix however can also be thought of as an execution of the X and Z gates consecutively. 
 
-The X and Z gate can be applied to a state consecutively
 
 <p align="center">
 <a><img src="/images/intro_unitary/Y.png" title="Y Matrix" width="173.7" height="57.3" /></a> 
@@ -99,11 +104,43 @@ The X and Z gate can be applied to a state consecutively
 <a><img src="/images/intro_unitary/Y1_nomat.png" title="Y Matrix" width="288.3" height="30" /></a> 
 </p>
 
+The Y gate performs a &#960; radian rotation about the Y axis.
+
 <p align="center">
 <a><img src="/images/intro_unitary/Y.gif" title="Y Bloch Sphere" width="400" height="400" /></a> 
 </p>
 
+<p align="center">
+<a href="https://quantumexperience.ng.bluemix.net/qx/display/code?id=5c7419f4f1c054005789102f&idExecution=5c7419f54d992d00518d9774"><img src="/images/intro_unitary/Y_circ.png" title="Y gate circuit" width="500" height="150" /></a> 
+</p>
+
+<p align="center">
+<a href="https://quantumexperience.ng.bluemix.net/qx/display/code?id=5c32c32a7f17bc005eeb44f7&idExecution=5c32c32a7f17bc005eeb44f8"><img src="/images/intro_unitary/Y_circ2.png" title="Y gate circuit" width="500" height="150" /></a> 
+</p>
+
 
 ### Hadamard
+
+
+<p align="center">
+<a><img src="/images/intro_unitary/H.png" title="H Matrix" width="160.2" height="66.6" /></a> 
+</p>
+
+Performing a Hadamard transformation on a qubit creates a state of equal superposition between the two basis states, meaning that only when you choose to measure the qubit will its state be determined. 
+
+<p align="center">
+<a><img src="/images/intro_unitary/H0.png" title="H Matrix" width="366.6" height="66.6" /></a> 
+</p>
+
+<p align="center">
+<a><img src="/images/intro_unitary/H1.png" title="H Matrix" width="376.8" height="66.6" /></a> 
+</p>
+
+<p align="center">
+<a href="https://quantumexperience.ng.bluemix.net/share/code/5c741f68f55271005b90d36f"><img src="/images/intro_unitary/H_circ.png" title="H gate circuit" width="500" height="165" /></a> 
+</p>
+
+<br>For more in depth explanation see [Jonathan Hui's Medium articles](https://medium.com/@jonathan_hui/qc-quantum-computing-series-10ddd7977abd) and for more resources on quantum computing see the [awesome list](
+http://github.com/desireevl/awesome-quantum-computing).
 
 Animations were made using <a href="http://qutip.org/">Qutip</a>, circuits using <a href="https://quantumexperience.ng.bluemix.net/qx/editor">IBM Q Experience</a> and equations using <a href="https://www.mathcha.io/editor">Mathcha</a>.

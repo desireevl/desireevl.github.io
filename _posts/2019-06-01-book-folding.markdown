@@ -47,5 +47,3 @@ Examples I have folded:
          <img src="/images/book_folding/cat_book.jpg" height="200" width="200"/>
     </div>
 </div>
-
-his

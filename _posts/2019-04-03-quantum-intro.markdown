@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Introduction to Quantum Unitary Operations"
+title:  "Introduction to Quantum Unitary Operators"
 date:   2019-04-03
 categories: archive
 ---

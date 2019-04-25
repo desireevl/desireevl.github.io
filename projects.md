@@ -18,3 +18,6 @@ permalink: /projects/
 
 [Astro Pointer](https://github.com/desireevl/astro-pointer)
 <br>A tool which points to celestial objects of your choosing in the sky with a laser.
+
+[Quantum Walk](https://github.com/Qiskit/qiskit-tutorials/blob/master/community/terra/qis_adv/quantum_walk.ipynb)
+<br>An implementation of a quantum walk on a cycle graph.

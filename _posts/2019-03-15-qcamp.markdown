@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "IBM Qiskit Camp Recap"
+date:   2019-03-15
+categories: archive
+---
+
+<p align="center">
+<img src="/images/qcamp/welcome.jpg" width="768" height="432" /></p>
+<br>
+This month I was fortunate enough to be a part of Qiskit's first community camp event. The three day event started out at the IBM Thomas J Watson Research Center in New York where we were welcomed with talks from the Qiskit competition award winners.
+<br>
+<div align="center">
+  <img src="/images/qcamp/qiskit_intro.jpg" height="300" width="460"/>
+  <img src="/images/qcamp/qiskit_award.jpg" height="300" width="460"/>
+</div>
+<br>
+After lunch we went on a lab tour to see some real quantum computers including the most anticipated IBM System One (!). I also partook in the unconference sessions where group discussion was had regarding projects within Qiskit as well as possible project ideas for the upcoming hackathon. 
+<br>
+<p align="center">
+<img src="/images/qcamp/unconference.jpg" width="576" height="324"/></p>
+<br>
+The hackathon over the following two days was held in Vermont. The hacking location was decked out with mini 'Q' adornments as well as an incredible quantum computer chandelier which lit up whenever a real job was submitted to one of IBM's quantum computers.
+<br>
+<p align="center">
+<img src="/images/qcamp/chandelier.jpg" width="576" height="324" /></p>
+<br>
+The hackathon brought together people from all over the world to work together and create some really interesting and useful projects. Two of my favourites were [VQompress](https://github.com/BryceFuller/qiskit_camp), which created a method for state preparation using compression and a quantum implementation of [Pong](https://github.com/HuangJunye/QPong).
+
+My team created a program that implemented a quantum random walk on a cycle graph (this is now available as a Jupyter Notebook in the [Qiskit Tutorials](https://github.com/Qiskit/qiskit-tutorials/blob/master/community/terra/qis_adv/quantum_walk.ipynb)).
+<br>
+<p align="center">
+<img src="/images/qcamp/my_team.jpg" width="453.6" height="604.8" /></p>
+<br>
+We finished up an exciting three days with dinner and games and had a chance to relax and enjoy the evening with smores before parting ways the following day.
+<br>
+<div align="center">
+  <img src="/images/qcamp/group_dinner.jpg" height="300" width="430"/>
+  <img src="/images/qcamp/me_and_q.jpg" height="300" width="480"/>
+</div>
+<br>
+Overall, I had an extraordinary time meeting and hacking with incredible quantum people from around the world. I am thankful to IBM for hosting such a well planned event and am definitely keen for the next one!

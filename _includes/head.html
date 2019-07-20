@@ -1,16 +1,66 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ site.name }} | {{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Source+Sans+Pro:400,700,200,300|Josefin+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:site_name" content="{{ site.name }}">
 
-  <link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}" >
-  <!--<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
-  <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="{{ page.url | absolute_url }}">
+  <meta name="twitter:title" content="{{ page.title | escape }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+
+  {% if page.thumb_image %}
+    {% if page.thumb_image contains '://' %}
+      <meta property="og:image" content="{{ page.thumb_image }}">
+      <meta name="twitter:image" content="{{ page.thumb_image }}">
+    {% else %}
+      <meta property="og:image" content="{{ site.url }}{% asset '{{ page.thumb_image }}' @path %}">
+      <meta name="twitter:image" content="{{ site.url }}{% asset '{{ page.thumb_image }}' @path %}">
+    {% endif %}
+  {% else %}
+    <meta property="og:image" content="{{ site.url }}{% asset og-image.jpg @path %}">
+    <meta name="twitter:image" content="{{ site.url }}{% asset og-image.jpg @path %}">
+  {% endif %}
+
+  <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
+
+  {% if site.local_fonts %}
+    {% asset fonts.css %}
+  {% endif %}
+
+  {% if site.theme_toggle == true %}
+
+    {% if site.blog_theme == "light" %}
+      <link rel="icon" type="image/x-icon" href="{% asset favicon-light.ico @path %}">
+      <link rel="apple-touch-icon" href="{% asset apple-touch-icon-light.png @path %}">
+      <link rel="stylesheet" type="text/css" title="light" id="light" href="{% asset light.css @path%}">
+      <link rel="stylesheet" type="text/css" title="dark" id="dark" href="{% asset dark.css @path%}" disabled="true">
+    {% else %}
+      <link rel="icon" type="image/x-icon" href="{% asset favicon-dark.ico @path %}">
+      <link rel="apple-touch-icon" href="{% asset apple-touch-icon-dark.png @path %}">
+      <link rel="stylesheet" type="text/css" title="light" id="light" href="{% asset light.css @path%}">
+      <link rel="stylesheet" type="text/css" title="dark" id="dark" href="{% asset dark.css @path%}" disabled="false">
+    {% endif %}
+
+  {% else %}
+
+    {% if site.blog_theme == "light" %}
+      <link rel="icon" type="image/x-icon" href="{% asset favicon-light.ico @path %}">
+      <link rel="apple-touch-icon" href="{% asset apple-touch-icon-light.png @path %}">
+      {% asset light.css %}
+    {% else %}
+      <link rel="icon" type="image/x-icon" href="{% asset favicon-dark.ico @path %}">
+      <link rel="apple-touch-icon" href="{% asset apple-touch-icon-dark.png @path %}">
+      {% asset dark.css %}
+    {% endif %}
+
+  {% endif %}
+  
 </head>

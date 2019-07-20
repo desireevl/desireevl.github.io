@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "IBM Qiskit Camp Recap"
+description: "Recap of IBM Qiskit's first camp held at the beginning of 2019 in New York."
 date:   2019-03-15
-categories: archive
 ---
 
 <p align="center">

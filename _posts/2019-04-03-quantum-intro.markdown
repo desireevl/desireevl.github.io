@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Introduction to Quantum Unitary Operators"
+description: "Visualisations and mathematical representations of the Pauli and Hadamard gates."
 date:   2019-04-03
 categories: archive
 ---

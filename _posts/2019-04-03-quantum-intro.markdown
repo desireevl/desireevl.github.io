@@ -38,13 +38,13 @@ When the X transform is applied to the standard basis, the results are simply th
 This gate performs a rotation about the x axis by &#960; radians, which is seen on the following Bloch sphere when applied to 0 basis state.
 
 <p align="center">
-<a><img src="/images/intro_unitary/X.gif" title="X Bloch Sphere" width="400" height="400" /></a> 
+<a><img src="/images/intro_unitary/X.gif" title="X Bloch Sphere" width="45%" height="45%" /></a> 
 </p>
 
 The circuit to implement the X transform consists of only the gate itself and a measurement gate. You can click on the circuit to go to the IBM Q composer where you can run the circuit on a quantum computer/simluator and view the results.
 
 <p align="center">
-<a href="https://quantumexperience.ng.bluemix.net/share/code/5c3202c3a5a3280056c8a791"><img src="/images/intro_unitary/X_circuit.png" title="X gate circuit" width="500" height="150" /></a> 
+<a href="https://quantumexperience.ng.bluemix.net/share/code/5c3202c3a5a3280056c8a791"><img src="/images/intro_unitary/X_circuit.png" title="X gate circuit" width="60%" height="60%" /></a> 
 </p>
 
 
@@ -69,16 +69,16 @@ Applying the Z gate to &#124;0&#9002; and &#124;1&#9002;, we see that the gate h
 The effects of the Z gate can be seen when applied to the &#124;+&#9002; state in the following visualisation, where a rotation of  &#960; about the z axis occurs. After the transformation, the final state is &#124;-&#9002;, and when measured, still has an equal probability of being 0 or 1. The Z gate performs a rotation of &#960; radians around the z axis. 
 
 <p align="center">
-<a><img src="/images/intro_unitary/Z_one.gif" title="Z Bloch Sphere" width="400" height="400" /></a> 
+<a><img src="/images/intro_unitary/Z_one.gif" title="Z Bloch Sphere" width="45%" height="45%" /></a> 
 </p>
 
 The first circuit below executes the Z gate on a &#124;0&#9002; state, and the second circuit on the superposition &#124;+&#9002; state:
 <p align="center">
-<a href="https://quantumexperience.ng.bluemix.net/share/code/5c328b1e997f7c00550401bd"><img src="/images/intro_unitary/Z_circ.png" title="Z gate circuit" width="500" height="150" /></a> 
+<a href="https://quantumexperience.ng.bluemix.net/share/code/5c328b1e997f7c00550401bd"><img src="/images/intro_unitary/Z_circ.png" title="Z gate circuit" width="60%" height="60%" /></a> 
 </p>
 
 <p align="center">
-<a href="https://quantumexperience.ng.bluemix.net/share/code/5c328c1b9d99af00561fe1b9"><img src="/images/intro_unitary/Z_circ2.png" title="Z gate circuit" width="500" height="150" /></a> 
+<a href="https://quantumexperience.ng.bluemix.net/share/code/5c328c1b9d99af00561fe1b9"><img src="/images/intro_unitary/Z_circ2.png" title="Z gate circuit" width="60%" height="60%" /></a> 
 </p>
 
 ### Pauli Y
@@ -109,17 +109,17 @@ Below, we apply the matrix representation as well as the X and Z combination to 
 As implied in these calculations, the difference between the X and Y operations is simply just the phase (an additional Z transformation). The Y gate performs a &#960; radian rotation about the Y axis.
 
 <p align="center">
-<a><img src="/images/intro_unitary/Y.gif" title="Y Bloch Sphere" width="400" height="400" /></a> 
+<a><img src="/images/intro_unitary/Y.gif" title="Y Bloch Sphere" width="45%" height="45%" /></a> 
 </p>
 
 The first circuit below is simply the Y gate operation and the second corresponds to the rotation witnessed in the animation above, where there is a 50/50 split of 0 and 1 recordings.
 
 <p align="center">
-<a href="https://quantumexperience.ng.bluemix.net/qx/display/code?id=5c7419f4f1c054005789102f&idExecution=5c7419f54d992d00518d9774"><img src="/images/intro_unitary/Y_circ.png" title="Y gate circuit" width="500" height="150" /></a> 
+<a href="https://quantumexperience.ng.bluemix.net/qx/display/code?id=5c7419f4f1c054005789102f&idExecution=5c7419f54d992d00518d9774"><img src="/images/intro_unitary/Y_circ.png" title="Y gate circuit" width="60%" height="60%" /></a> 
 </p>
 
 <p align="center">
-<a href="https://quantumexperience.ng.bluemix.net/qx/display/code?id=5c32c32a7f17bc005eeb44f7&idExecution=5c32c32a7f17bc005eeb44f8"><img src="/images/intro_unitary/Y_circ2.png" title="Y gate circuit" width="500" height="150" /></a> 
+<a href="https://quantumexperience.ng.bluemix.net/qx/display/code?id=5c32c32a7f17bc005eeb44f7&idExecution=5c32c32a7f17bc005eeb44f8"><img src="/images/intro_unitary/Y_circ2.png" title="Y gate circuit" width="60%" height="60%" /></a> 
 </p>
 
 
@@ -133,7 +133,7 @@ The Hadamard gate is extremely important as it is used to create states of super
 Performing a Hadamard transformation on a qubit creates a state of equal superposition between the two basis states, meaning that only when you choose to measure the qubit will its state be determined. This can be seen in the results from the circuit below: half of the shots will measure 0 and the other half as 1. 
 
 <p align="center">
-<a href="https://quantumexperience.ng.bluemix.net/share/code/5c741f68f55271005b90d36f"><img src="/images/intro_unitary/H_circ.png" title="H gate circuit" width="500" height="165" /></a> 
+<a href="https://quantumexperience.ng.bluemix.net/share/code/5c741f68f55271005b90d36f"><img src="/images/intro_unitary/H_circ.png" title="H gate circuit" width="60%" height="60%" /></a> 
 </p>
 
 Applying the Hadamard operation on the &#124;0&#9002; and &#124;1&#9002; states result in the formation of a new superposition basis: &#124;+&#9002; and &#124;-&#9002;.
@@ -149,7 +149,7 @@ Applying the Hadamard operation on the &#124;0&#9002; and &#124;1&#9002; states 
 The following animation illustrates two consecutive Hadamard transformations which equates to two rotations about the <sup>(x+z)</sup>&frasl;<sub>&#8730;2</sub> axis by &#960; radians. After the first, the position of the vector lies along the x axis at &#124;+&#9002; and after the second transformation, the vector is back to where it started, which is what we expect. 
 
 <p align="center">
-<a><img src="/images/intro_unitary/hadamard.gif" title="Hadamard Bloch Sphere" width="400" height="400" /></a> 
+<a><img src="/images/intro_unitary/hadamard.gif" title="Hadamard Bloch Sphere" width="45%" height="45%" /></a> 
 </p>
 
 

@@ -26,7 +26,7 @@ The hackathon over the following two days was held in Vermont. The hacking locat
 <br>
 The hackathon brought together people from all over the world to work together and create some really interesting and useful projects. Two of my favourites were [VQompress](https://github.com/BryceFuller/qiskit_camp), which created a method for state preparation using compression and a quantum implementation of [Pong](https://github.com/HuangJunye/QPong).
 
-My team created a program that implemented a quantum random walk on a cycle graph (this is now available as a Jupyter Notebook in the [Qiskit Tutorials](https://github.com/Qiskit/qiskit-tutorials/blob/master/community/terra/qis_adv/quantum_walk.ipynb)).
+My team created a program that implemented a quantum random walk on a cycle graph (this is now available as a Jupyter Notebook in the [Qiskit Tutorials](https://github.com/Qiskit/qiskit-tutorials-community/blob/master/terra/qis_adv/quantum_walk.ipynb)).
 <br>
 <p align="center">
 <img src="/images/qcamp/my_team.jpg" width="50%" height="50%" /></p>

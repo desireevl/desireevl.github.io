@@ -64,6 +64,7 @@ defaults:
       type: my_tags
     values:
       layout: articles_by_tag
+include: ["slides"]
 exclude:
   - .travis.yml
   - bin/*
@@ -75,6 +76,16 @@ exclude:
   - README.md
   - vendor/
   - yarn.lock
+  - README.md
+  - reveal.js/index.html
+  - reveal.js/plugin/markdown/example.html
+  - reveal.js/plugin/notes/notes.html
+  - reveal.js/plugin/notes-server/notes.html
+  - reveal.js/test/
+  - reveal.js/*.md
+  - reveal.js/Gruntfile.js
+  - reveal.js/package.json
+  - reveal.js/LICENSE
 plugins:
   - jekyll-assets
   - jekyll-paginate

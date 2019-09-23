@@ -17,9 +17,9 @@ The five day long workshop covered a range of topics including quantum cryptogra
 | ------------- |:-------------:| -----:|
 | Chemical Problems in QC | Markus Reiher | [Available](https://qid.ethz.ch/wp-content/uploads/2019/09/Markus_Reiher_QuID2019_slides.pdf) |
 | Quantum Chemistry | James Whitfield | [Part 1](https://qid.ethz.ch/wp-content/uploads/2018/07/Zurich1.pdf), [Part 2](https://qid.ethz.ch/wp-content/uploads/2018/07/Zurich2.pdf) |
-| Strangeworks Tutorial| César A. Rodriguez-Rosario | [Available](https://github.com/desireevl/desireevl.github.io/images/qcamp-europe/Power-of-quantum-quid2019.pdf) |
+| Strangeworks Tutorial| César A. Rodriguez-Rosario | [Available](https://github.com/desireevl/desireevl.github.io/blob/master/images/qcamp-europe/Power-of-quantum-quid2019.pdf) |
 | Tensor Networks | Maris ozols | [Available](https://qid.ethz.ch/wp-content/uploads/2019/09/Maris_Ozols_TN_notes_QuID2019.pdf) |
-| Quantum Algorithms | Arjan Cornelissen & Joran van Apeldoorn | [Available](https://github.com/desireevl/desireevl.github.io/images/qcamp-europe/quantum-algorithms.pdf) |
+| Quantum Algorithms | Arjan Cornelissen & Joran van Apeldoorn | [Available](https://github.com/desireevl/desireevl.github.io/blob/master/images/qcamp-europe/quantum-algorithms.pdf) |
 | ProjectQ | Damien Nguyen | [Available](https://qid.ethz.ch/wp-content/uploads/2019/09/Damien_projectq_intro_handout_QuID2019.pdf) |
 | Quantum Machine Learning | Johannes Bausch | [Available](https://qid.ethz.ch/wp-content/uploads/2019/09/Johannes-Bausch_Decoder_Natural_Language_Processing_QuID2019.pdf)|
 | Quantum Error Correction | Nikolas Breuckmann | [Part 1](https://docs.google.com/presentation/d/11xV-uH9-8GyiC0EizciYvpeGqhcCPhhQobIDOjET92k/edit#slide=id.p), [Part 2](https://docs.google.com/presentation/d/1J0xVtCpA4MJk5P45r7zPw3Kc7ypENrT4u3QnCDguKdY/edit#slide=id.p) |

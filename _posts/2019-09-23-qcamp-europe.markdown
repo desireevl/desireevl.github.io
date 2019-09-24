@@ -34,7 +34,7 @@ This workshop was a fantastic opportunity to meet people from around the globe a
 After five days of learning, it was time to put our new knowledge to practice at the IBM Q hackathon. The first morning at Piz Gloria started off with project idea pitches. The environment of physicists and developers with various backgrounds ignited some truly interesting ideas, such as a [quantum music synthesiser](https://github.com/menegolli/Quantum_synth), an ion-trap backend for Qiskit (as it is currently tailored only for superconducting devices) and [quantum fourier transform for 2D drawings](https://github.com/rumschuettel/qhomer). The remainder of the day was spent hacking and enjoying the beautiful mountain view!
 
 <p align="center">
-<img src="/images/qcamp-europe/hackin.jpg" width="60%" height="60%"/></p>
+<img src="/images/qcamp-europe/hack.jpg" width="60%" height="60%"/></p>
 
 My team chose to work on a [quantum game theory project](https://github.com/desireevl/quantum-game-theory), building a framework that could be used to create game theory models: in the end, a quantum Prisoner's dilemma, chicken (game) and minority (game) was implemented with easy expansion for multiple players as well as other parameters.
 

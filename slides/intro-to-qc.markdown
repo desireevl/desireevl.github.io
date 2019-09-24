@@ -42,7 +42,7 @@ date: 2019-09-26
       <h3 align="center">Classical Bits</h3>
       <br>
       <br>
-      <a><img class="plain" width="80%" height="80%" src="images/classical.png"></a>
+      <a><img class="plain" width="80%" height="80%" src="/images/intro-qc/classical.png"></a>
     </div>
     <div class="right">
       <h3>Quantum Bits (qubits)</h3>
@@ -221,7 +221,7 @@ date: 2019-09-26
     <section>
         <h2>D-Wave Annealer Speedup</h2>
         <br>
-        <a><img class="plain" width="60%" height="60%" src="images/dwave-graph.png"></a>
+        <a><img class="plain" width="60%" height="60%" src="/images/intro-qc/dwave-graph.png"></a>
         <p style="font-size:50%"><b>DW</b>: D-Wave &emsp; <b>SA</b>: Simulated Annealing &emsp; <b>SVMC</b>: Spin Vector Monte Carlo &emsp; <b>QMC</b>: Quantum Monte Carlo &emsp; <b>HFS</b>: Hamze-de Freitas-Selb Algorithm</p>
         <p class="cite">
             From <a href="https://arxiv.org/pdf/1701.04579.pdf">Quantum Annealing amid Local Ruggedness and Global Frustration</a> (2017).
@@ -248,10 +248,10 @@ date: 2019-09-26
 <!-- Google supremacy -->
 <section>
     <section>
-        <a href="https://www.popularmechanics.com/technology/a29190975/google-quantum-supremacy/"><img class="plain" width="80%" heigh="80%" src="images/google_article.png"></a>
+        <a href="https://www.popularmechanics.com/technology/a29190975/google-quantum-supremacy/"><img class="plain" width="80%" heigh="80%" src="/images/intro-qc/google_article.png"></a>
     </section>
     <section>
-        <a href="https://t.co/YOeB4cZqN1?amp=1"><img class="plain" width="70%" height="70%" src="images/google_paper.png"></a>
+        <a href="https://t.co/YOeB4cZqN1?amp=1"><img class="plain" width="70%" height="70%" src="/images/intro-qc/google_paper.png"></a>
         <br>
         <ul>
             <li>test</li>
@@ -261,7 +261,7 @@ date: 2019-09-26
 
 <!-- Coding demo -->
 <section>
-        <a href="http://localhost:8888/notebooks/Grover_IBM.ipynb" target="_blank"><img class="plain" width="80%" height="80%" src="images/google_article.png"></a>
+        <a href="http://localhost:8888/notebooks/Grover_IBM.ipynb" target="_blank"><img class="plain" width="80%" height="80%" src="/images/intro-qc/google_article.png"></a>
 </section>
 
 <!-- Quantum bullshit -->

@@ -3,6 +3,7 @@ layout: slide
 title: Introduction to Quantum Computing
 description: UQCS Talk
 theme: white
+custom_css: intro-to-qc
 transition: slide
 date: 2019-09-26
 ---
@@ -29,7 +30,7 @@ date: 2019-09-26
       </ul>
     </div>
     <div class="right">
-      <a href="http://www.desireevl.com"><img width="450" height="300" src="images/hack.jpg"></a>
+      <a href="http://www.desireevl.com"><img width="450" height="300" src="/images/qcamp-europe/hack.jpg"></a>
     </div>
   </section>
 </section>
@@ -85,7 +86,7 @@ date: 2019-09-26
     <h2>Gates - Pauli X</h2>
     <br>
     <div class="left">
-      <a href="http://www.desireevl.com"><img class="plain" width="200" height="54.684" src="images/x_gate.png"></a>
+      <a href="http://www.desireevl.com"><img class="plain" width="200" height="54.684" src="/images/intro-qc/x_gate.png"></a>
       <br>
       <p>Equivalent to a classical NOT gate</p>
       <p>Performs a bit flip operation</p>
@@ -94,14 +95,14 @@ date: 2019-09-26
     </div>
     <div class="fragment right" data-autoslide="900">
       <br>
-      <a href="http://www.desireevl.com"><img class="plain" width="300" height="300" src="images/X.gif"></a>
+      <a href="http://www.desireevl.com"><img class="plain" width="300" height="300" src="/images/intro_unitary/X.gif"></a>
     </div>
     <div class="fragment" data-autoslide="0"></div>
   </section>
   <section>
       <h2>Gates - Pauli Z</h2>
       <div class="left">
-        <a href="http://www.desireevl.com"><img class="plain" width="200" height="54.684" src="images/z_gate.png"></a>
+        <a href="http://www.desireevl.com"><img class="plain" width="200" height="54.684" src="/images/intro-qc/z_gate.png"></a>
         <br>
         <p>No equivalent classical gate</p>
         <p>Performs a phase flip operation</p>
@@ -111,15 +112,15 @@ date: 2019-09-26
       <div class="fragment right" data-autoslide="900">
         <br>
         <br>
-        <a href="http://www.desireevl.com"><img class="plain" width="220" height="220" src="images/Z_zero.png"></a>
-        <a href="http://www.desireevl.com"><img class="plain" width="220" height="220" src="images/Z_one.gif"></a>
+        <a href="http://www.desireevl.com"><img class="plain" width="220" height="220" src="/images/intro_unitary/Z_zero.png"></a>
+        <a href="http://www.desireevl.com"><img class="plain" width="220" height="220" src="/images/intro_unitary/Z_one.gif"></a>
       </div>
       <div class="fragment" data-autoslide="0"></div>
   </section>
   <section>
       <h2>Gates - Hadamard</h2>
       <div class="left">
-        <a href="http://www.desireevl.com"><img class="plain" width="200" height="54.684" src="images/h_gate.png"></a>
+        <a href="http://www.desireevl.com"><img class="plain" width="200" height="54.684" src="/images/intro-qc/h_gate.png"></a>
         <br>
         <p>No equivalent classical gate</p>
         <p>Puts qubit into superposition state between 0 and 1</p>
@@ -128,7 +129,7 @@ date: 2019-09-26
       </div>
       <div class="fragment right" data-autoslide="900">
         <br>
-        <a href="http://www.desireevl.com"><img class="plain" width="300" height="300" src="images/hadamard.gif"></a>
+        <a href="http://www.desireevl.com"><img class="plain" width="300" height="300" src="/images/intro_unitary/hadamard.gif"></a>
       </div>
       <div class="fragment" data-autoslide="0"></div>
   </section>
@@ -224,19 +225,19 @@ date: 2019-09-26
   <div class="left">
     <br>
     <div>
-      <img style="vertical-align:middle" src="images/computer.png" class="plain" width="35" height="35">
+      <img style="vertical-align:middle" src="/images/intro-qc/computer.png" class="plain" width="35" height="35">
       <span style="padding: 0 0 0 0.5em"><a href="https://desireevl.com">desireevl.com</a></span>
     </div>
     <div>
-      <img style="vertical-align:middle" src="images/instagram.png" class="plain" width="30" height="30">
+      <img style="vertical-align:middle" src="/images/intro-qc/instagram.png" class="plain" width="30" height="30">
       <span style="padding: 0 0 0 0.5em"><a href="http://instagram.com/mr.miso.oz">@mr.miso.oz (my cat)</a></span>
     </div>
     <div>
-      <img style="vertical-align:middle" src="images/twitter.png" class="plain" width="35" height="35">
+      <img style="vertical-align:middle" src="/images/intro-qc/twitter.png" class="plain" width="35" height="35">
       <span style="padding: 0 0 0 0.5em"><a href="https://twitter.com/desireevogtlee">@desireevogtlee</a></span>
     </div>
   </div>
   <div class="right">
-    <a href="http://www.desireevl.com"><img class="plain" width="450" height="250" src="images/miso.jpg"></a>
+    <a href="http://www.desireevl.com"><img class="plain" width="450" height="250" src="/images/miso.jpg"></a>
   </div>
 </section>

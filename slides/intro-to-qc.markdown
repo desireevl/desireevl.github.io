@@ -47,7 +47,7 @@ date: 2019-09-26
     <div class="right">
       <h3>Quantum Bits (qubits)</h3>
       <br>
-      <a><img class="plain" align="center" width="350" height="350" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Bloch_sphere.svg"></a>
+      <img class="plain" align="center" width="350" height="350" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Bloch_sphere.svg">
       <p>$| \psi \rangle = \alpha | 0 \rangle + \beta | 1 \rangle$</p>
       <p class="cite">
           From <a href="https://commons.wikimedia.org/wiki/File:Bloch_sphere.svg">Wikicommons</a> (2009).
@@ -87,6 +87,14 @@ date: 2019-09-26
     <br>
     <p>For each qubit added, the compute power doubles.</p>
   </section>
+</section>
+
+<!-- Quantum computers and how they work -->
+<section>
+    <h2>Quantum Computers</h2>
+    <p align="left">Computers that use qubits instead of bits</p>
+    <p align="left">Different types of QCs: annealers, adiabatic, universal</p>
+    <p align="left">Operations are performed on a universal QC by applying unitary gates</p>
 </section>
 
 <!-- Gates X, Z, H -->
@@ -142,6 +150,75 @@ date: 2019-09-26
       </div>
       <div class="fragment" data-autoslide="0"></div>
   </section>
+</section>
+
+<!-- Coding demo -->
+<section>
+        <h2>Example Coding on a Quantum Computer</h2>
+        <a href="http://localhost:8888/notebooks/Bernstein-Vazirani.ipynb" target="_blank"><img class="plain" width="45%" height="45%" src="/images/intro-qc/code.png"></a>
+</section>
+
+<!-- Quantum algorithms -->
+<section>
+        <section>
+            <h2>Quantum Algorithms - Shor's Algorithm</h2>
+            <p>Factoring algorithm that runs in polynomial time</p>
+            <img class="plain" align="center" width="60%" height="60%" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Shor%27s_algorithm.svg">
+            <p>Could be used to break public key cryptography (RSA)</p>
+        </section>
+        <section>
+            <h2>Quantum Algorithms - Grover's Algorithm</h2>
+            <p>Searching algorithm that runs in $O(\sqrt{N})$ time</p>
+            <img class="plain" align="center" width="60%" height="60%" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Grovers_algorithm.svg">
+        </section>
+</section>
+
+<!-- Applications -->
+<section>
+    <h2>Applications of Quantum Computing</h2>
+    <div class="left">
+        <img class="plain" style="padding-left: 100px;" width="10%" height="10%" src="/images/intro-qc/atom.png">
+        <br>
+        <p style="font-size: 90%; padding-left: 20px;"><b>Chemical Simulation</b></p>
+        <ul style="line-height:10%">
+            <li style="font-size: 75%">Molecular design</li>
+            <li style="font-size: 75%">Drug discovery</li>
+            <li style="font-size: 75%">Protein structure prediction</li>
+        </ul>
+        <br>
+        <img class="plain" style="padding-left: 100px;" width="10%" height="10%" src="/images/intro-qc/lock.png">
+        <br>
+        <p style="font-size: 90%; padding-left: 50px;"><b>Cryptography</b></p>
+        <ul style="line-height:10%">
+            <li style="font-size: 75%">Breaking RSA</li>
+            <li style="font-size: 75%">Breaking Diffie-Hellman</li>
+        </ul>
+    </div>
+    <div class="right">
+        <img class="plain" style="padding-right: 150px;" width="12%" height="12%" src="/images/intro-qc/chip.png">
+        <br>
+        <p style="font-size: 90%; padding-right: 50px;"><b>Artificial Intelligence</b></p>
+        <ul style="line-height:10%; padding-right: 100px;">
+            <li style="font-size: 75%">Prediction</li>
+            <li style="font-size: 75%">Classification</li>
+        </ul>
+        <br>
+        <img class="plain" style="padding-right: 150px;" width="9%" height="9%" src="/images/intro-qc/line-chart.png">
+        <br>
+        <p style="font-size: 90%; padding-right: 50px;"><b>Scenario Simulation</b></p>
+        <ul style="line-height:10%">
+            <li style="font-size: 75%">Risk Analysis</li>
+            <li style="font-size: 75%">Disruption Management</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Quantum error -->
+<section>
+        <h2 align="left">Biggest Issue with Current Quantum Computing</h2>
+        <p align="left">Decoherence/Noise: the loss of coherence, where a quantum system reverts to a classical state due to interactions with the environment.</p>
+        <p align="left">It is an issue as to perform computation, qubits need to be in an entangled or in superposition.</p>
+        <p align="left">Overcome using quantum error correcting (QEC) codes such as repetition codes, and circuits are designed to not spread error.</p>
 </section>
 
 <!-- Hardware designs -->
@@ -221,7 +298,7 @@ date: 2019-09-26
     <section>
         <h2>D-Wave Annealer Speedup</h2>
         <br>
-        <a><img class="plain" width="60%" height="60%" src="/images/intro-qc/dwave-graph.png"></a>
+        <img class="plain" width="60%" height="60%" src="/images/intro-qc/dwave-graph.png">
         <p style="font-size:50%"><b>DW</b>: D-Wave &emsp; <b>SA</b>: Simulated Annealing &emsp; <b>SVMC</b>: Spin Vector Monte Carlo &emsp; <b>QMC</b>: Quantum Monte Carlo &emsp; <b>HFS</b>: Hamze-de Freitas-Selb Algorithm</p>
         <p class="cite">
             From <a href="https://arxiv.org/pdf/1701.04579.pdf">Quantum Annealing amid Local Ruggedness and Global Frustration</a> (2017).
@@ -229,39 +306,32 @@ date: 2019-09-26
     </section>
 </section>
 
-<!-- Quantum algorithms -->
-<section>
-    <section>
-        <h2>Quantum Algorithms - Shor's Algorithm</h2>
-    </section>
-    <section>
-        <h2>Quantum Algorithms - Grover's Algorithm</h2>
-    </section>
-</section>
-
-<!-- Quantum error -->
-<section>
-  <h2>Issues with Current Quantum Computers</h2>
-
-</section>
-
 <!-- Google supremacy -->
 <section>
-    <section>
-        <a href="https://www.popularmechanics.com/technology/a29190975/google-quantum-supremacy/"><img class="plain" width="80%" heigh="80%" src="/images/intro-qc/google_article.png"></a>
-    </section>
-    <section>
-        <a href="https://t.co/YOeB4cZqN1?amp=1"><img class="plain" width="70%" height="70%" src="/images/intro-qc/google_paper.png"></a>
-        <br>
-        <ul>
-            <li>test</li>
-        </ul>
-    </section>
-</section>
-
-<!-- Coding demo -->
-<section>
-        <a href="http://localhost:8888/notebooks/Grover_IBM.ipynb" target="_blank"><img class="plain" width="80%" height="80%" src="/images/intro-qc/google_article.png"></a>
+        <section>
+            <a href="https://www.popularmechanics.com/technology/a29190975/google-quantum-supremacy/"><img class="plain" src="images/google_article.png"></a>
+        </section>
+        <section>
+            <a href="https://t.co/YOeB4cZqN1?amp=1"><img class="plain" width="70%" height="70%" src="images/google_paper.png"></a>
+            <p style="font-size: 40%">(Not officially released or peer reviewed!)</p>
+            <!-- <br> -->
+            <div class="fragment" data-autoslide="700">
+                <h4 align="left">The task:</h4>
+                <p style="font-size:80%" align="left">Sampling the output of pseudo-random quantum circuits. The circuits entangle a set of qubits by repeated application of single and two qubit operations which produce a set of bitstrings.
+                The output is a probability distribution of the bitstrings.</p>
+            </div>
+            <div class="fragment" data-autoslide="700">
+                <h4 align="left">Result:</h4>
+                <p style="font-size:80%" align="left">Sampling the random circuit 3 million times <br>
+                Google Sycamore (53 qubits): 6000s <br>
+                Classical supercomputer (Summit, Julich): 50 trillion core hours</p>
+            </div>
+            <div class="fragment" data-autoslide="700">
+                <h4 align="left">Implication:</h4> 
+                <p style="font-size:80%" align="left">Does <em>not</em> mean we can now break encryption!</p>
+            </div>
+            <div class="fragment" data-autoslide="0"></div>
+        </section>
 </section>
 
 <!-- Quantum bullshit -->

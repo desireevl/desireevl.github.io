@@ -309,10 +309,10 @@ date: 2019-09-26
 <!-- Google supremacy -->
 <section>
         <section>
-            <a href="https://www.popularmechanics.com/technology/a29190975/google-quantum-supremacy/"><img class="plain" src="images/google_article.png"></a>
+            <a href="https://www.popularmechanics.com/technology/a29190975/google-quantum-supremacy/"><img class="plain" src="/images/intro-qc/google_article.png"></a>
         </section>
         <section>
-            <a href="https://t.co/YOeB4cZqN1?amp=1"><img class="plain" width="70%" height="70%" src="images/google_paper.png"></a>
+            <a href="https://t.co/YOeB4cZqN1?amp=1"><img class="plain" width="70%" height="70%" src="/images/intro-qc/google_paper.png"></a>
             <p style="font-size: 40%">(Not officially released or peer reviewed!)</p>
             <!-- <br> -->
             <div class="fragment" data-autoslide="700">
@@ -339,12 +339,12 @@ date: 2019-09-26
     <div class="left">
         <h2>Quantum Bullshit Detector</h2>
         <p>Detects bullshit articles and comments in the media.</p>		
-        <a href="https://twitter.com/BullshitQuantum"><img class="plain" src="images/bs_banner.png"></a>
+        <a href="https://twitter.com/BullshitQuantum"><img class="plain" src="/images/intro-qc/bs_banner.png"></a>
     </div>
     <div class="right">
-        <a href="https://twitter.com/BullshitQuantum/status/1175214729347751938"><img class="plain fragment" data-autoslide="700" width="80%" height="80%" src="images/bs2.png"></a>
-        <a href="https://twitter.com/BullshitQuantum/status/1161304665952120833"><img class="plain fragment" data-autoslide="700" width="80%" height="80%" src="images/nbs.png"></a>
-        <a href="https://twitter.com/BullshitQuantum/status/1175257413319938049"><img class="plain fragment" data-autoslide="700" width="80%" height="80%" src="images/bs1.png"></a>
+        <a href="https://twitter.com/BullshitQuantum/status/1175214729347751938"><img class="plain fragment" data-autoslide="700" width="80%" height="80%" src="/images/intro-qc/bs2.png"></a>
+        <a href="https://twitter.com/BullshitQuantum/status/1161304665952120833"><img class="plain fragment" data-autoslide="700" width="80%" height="80%" src="/images/intro-qc/nbs.png"></a>
+        <a href="https://twitter.com/BullshitQuantum/status/1175257413319938049"><img class="plain fragment" data-autoslide="700" width="80%" height="80%" src="/images/intro-qc/bs1.png"></a>
     </div>
     <div class="fragment" data-autoslide="0"></div>
 </section>

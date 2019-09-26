@@ -87,19 +87,27 @@ date: 2019-09-26
     <br>
     <p>For each qubit added, the compute power doubles.</p>
   </section>
+      <section>
+            <h2>Quantum Computers</h2>
+            <p align="left">Computers that use qubits instead of bits.</p>
+            <p align="left">Different types of QCs: annealers, adiabatic, universal, Noisy Intermediate Scale Quantum (NISQ)</p>
+            <p align="left">Usually when we refer to QCs, we mean fault tolerant devices, but currently we only have NISQ devices.</p>
+    </section>
 </section>
 
-<!-- Quantum computers and how they work -->
-<section>
-    <h2>Quantum Computers</h2>
-    <p align="left">Computers that use qubits instead of bits</p>
-    <p align="left">Different types of QCs: annealers, adiabatic, universal</p>
-    <p align="left">Operations are performed on a universal QC by applying unitary gates</p>
-</section>
-
-<!-- Gates X, Z, H -->
+<!-- Unitary gates -->
 <section>
   <section>
+      <h2>Unitary Operators</h2>
+      <p align="left">Operations are performed on universal QCs by applying unitary gates.</p>
+      <p align="left">Gates must be unitary in order to be reversible and preserve the normalisation of the quantum state.</p>
+      <p>$UU^{\dagger} = I$</p>
+      <img class="plain" align="center" width="25%" height="25%" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Bloch_sphere.svg">
+      <p class="cite">
+        From <a href="https://commons.wikimedia.org/wiki/File:Bloch_sphere.svg">Wikicommons</a> (2009).
+      </p>
+    </section>
+    <section>
     <h2>Gates - Pauli X</h2>
     <br>
     <div class="left">
@@ -117,24 +125,6 @@ date: 2019-09-26
     <div class="fragment" data-autoslide="0"></div>
   </section>
   <section>
-      <h2>Gates - Pauli Z</h2>
-      <div class="left">
-        <a href="http://www.desireevl.com"><img class="plain" width="200" height="54.684" src="/images/intro-qc/z_gate.png"></a>
-        <br>
-        <p>No equivalent classical gate</p>
-        <p>Performs a phase flip operation</p>
-        <br>
-        <p>$Z=\begin{bmatrix} 1 & 0\\ 0 & -1 \end{bmatrix}$</p>
-      </div>
-      <div class="fragment right" data-autoslide="900">
-        <br>
-        <br>
-        <a href="http://www.desireevl.com"><img class="plain" width="220" height="220" src="/images/intro_unitary/Z_zero.png"></a>
-        <a href="http://www.desireevl.com"><img class="plain" width="220" height="220" src="/images/intro_unitary/Z_one.gif"></a>
-      </div>
-      <div class="fragment" data-autoslide="0"></div>
-  </section>
-  <section>
       <h2>Gates - Hadamard</h2>
       <div class="left">
         <a href="http://www.desireevl.com"><img class="plain" width="200" height="54.684" src="/images/intro-qc/h_gate.png"></a>
@@ -150,6 +140,45 @@ date: 2019-09-26
       </div>
       <div class="fragment" data-autoslide="0"></div>
   </section>
+      <section>
+        <h2>Gates - Controlled NOT (CNOT)</h2>
+        <div class="left">
+            <img class="plain" style="padding-left: 100px;" width="40%" height="40%" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/CNOT_gate.svg">
+            <br>
+            <p>Performs a bit flip operation based on the value of the first qubit</p>
+            <p style="font-size: 80%">$CNOT=\begin{bmatrix} 1 &0  &0  &0 \\ 0 &1  &0  &0 \\ 0 &0  &0  &1 \\ 0 &0  &1  &0 \end{bmatrix}$</p>
+        </div>
+        <div class="fragment right" data-autoslide="900">
+            <br>
+            <table style="background-color:rgba(241, 192, 192, 0.25);">
+                <thead>
+                    <tr>
+                    <th>Before</th>
+                    <th>After</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>00</td>
+                    <td>00</td>
+                    </tr>
+                    <tr>
+                    <td>01</td>
+                    <td>01</td>
+                    </tr>
+                    <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    </tr>
+                    <tr>
+                    <td>11</td>
+                    <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="fragment" data-autoslide="0"></div>
+  </section>
 </section>
 
 <!-- Coding demo -->
@@ -164,12 +193,18 @@ date: 2019-09-26
             <h2>Quantum Algorithms - Shor's Algorithm</h2>
             <p>Factoring algorithm that runs in polynomial time</p>
             <img class="plain" align="center" width="60%" height="60%" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Shor%27s_algorithm.svg">
+            <p class="cite">
+              From <a href="https://upload.wikimedia.org/wikipedia/commons/6/6b/Shor%27s_algorithm.svg">Wikicommons</a> (2014).
+            </p>
             <p>Could be used to break public key cryptography (RSA)</p>
         </section>
         <section>
-            <h2>Quantum Algorithms - Grover's Algorithm</h2>
-            <p>Searching algorithm that runs in $O(\sqrt{N})$ time</p>
-            <img class="plain" align="center" width="60%" height="60%" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Grovers_algorithm.svg">
+          <h2>Quantum Algorithms - Grover's Algorithm</h2>
+          <p>Searching algorithm that runs in $O(\sqrt{N})$ evaluations</p>
+          <img class="plain" align="center" width="60%" height="60%" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Grovers_algorithm.svg">
+          <p class="cite">
+            From <a href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Grovers_algorithm.svg">Wikicommons</a> (2009).
+          </p>
         </section>
 </section>
 
@@ -352,12 +387,15 @@ date: 2019-09-26
 <!-- Useful resources -->
 <section>
   <h2>Useful Resources</h2>
-  <ul class="fragment scrollbar" data-autoslide="700">
-    <li>Slides: <a href="https://desireevl.com/slides">https://desireevl.com/slides</a></li>
-    <li>List of QC resources: <a href="https://github.com/desireevl/awesome-quantum-computing">https://github.com/desireevl/awesome-quantum-computing</a></li>
-    <li>Michelle Simmons talk: <a href="https://www.youtube.com/watch?v=FnPp73F5cnE ">https://www.youtube.com/watch?v=FnPp73F5cnE</a></li>
-    <li>D-Wave: <a href="https://arxiv.org/pdf/1611.04528.pdf">https://arxiv.org/pdf/1611.04528.pdf</a>, <a href="https://arxiv.org/pdf/1701.04579.pdf">https://arxiv.org/pdf/1701.04579.pdf</a></li>
-  </ul>
+    <ul class="fragment scrollbar" data-autoslide="700">
+        <li>Slides: <a href="https://desireevl.com/slides">https://desireevl.com/slides</a></li>
+        <li>Bernstein-Vazirani IPYNB: <a href="https://github.com/desireevl/desireevl.github.io/blob/master/images/intro-qc/Bernstein-Vazirani.ipynb">https://github.com/desireevl/desireevl.github.io/blob/master/images/intro-qc/Bernstein-Vazirani.ipynb</a></li>
+        <li>List of QC resources: <a href="https://github.com/desireevl/awesome-quantum-computing">https://github.com/desireevl/awesome-quantum-computing</a></li>
+        <li>Michelle Simmons talk: <a href="https://www.youtube.com/watch?v=FnPp73F5cnE ">https://www.youtube.com/watch?v=FnPp73F5cnE</a></li>
+        <li>D-Wave hardware: <a href="https://arxiv.org/pdf/1611.04528.pdf">https://arxiv.org/pdf/1611.04528.pdf</a>, <a href="https://arxiv.org/pdf/1701.04579.pdf">https://arxiv.org/pdf/1701.04579.pdf</a></li>
+        <li>Google quantum supremacy paper: <a href="https://t.co/TVgiNS54FK?amp=1">https://t.co/TVgiNS54FK?amp=1</a></li>
+        <li>Google quantum supremacy supplementary materials: <a href="https://t.co/8m8NHBbcDK?amp=1">https://t.co/8m8NHBbcDK?amp=1</a> </li>
+    </ul>
   <div class="fragment" data-autoslide="0"></div>
 </section>
 

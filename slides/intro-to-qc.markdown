@@ -90,6 +90,7 @@ date: 2019-09-26
       <section>
             <h2>Quantum Computers</h2>
             <p align="left">Computers that use qubits instead of bits.</p>
+            <p align="left">Quantum properties: superposition, entanglement, interference</p>            
             <p align="left">Different types of QCs: annealers, adiabatic, universal, Noisy Intermediate Scale Quantum (NISQ)</p>
             <p align="left">Usually when we refer to QCs, we mean fault tolerant devices, but currently we only have NISQ devices.</p>
     </section>
@@ -357,9 +358,9 @@ date: 2019-09-26
             </div>
             <div class="fragment" data-autoslide="700">
                 <h4 align="left">Result:</h4>
-                <p style="font-size:80%" align="left">Sampling the random circuit 3 million times <br>
-                Google Sycamore (53 qubits): 6000s <br>
-                Classical supercomputer (Summit, Julich): 50 trillion core hours</p>
+                <p style="font-size:80%" align="left">Sampling the random circuit 1 million times <br>
+                Google Sycamore (53 qubits): 200s <br>
+                Classical supercomputer (Summit, Julich): 10,000yrs on 10M cores</p>
             </div>
             <div class="fragment" data-autoslide="700">
                 <h4 align="left">Implication:</h4> 

@@ -1,7 +1,7 @@
 ---
 layout: slide
 title: Introduction to Quantum Computing
-description: UQCS Talk
+description: University of Queensland Computing Society Talk
 theme: white
 custom_css: intro-to-qc
 transition: slide

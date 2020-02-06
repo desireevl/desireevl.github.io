@@ -236,7 +236,7 @@ date: 2020-01-06
 			<li>Many player cooperative games can model scenarios like a crash in the financial market</li>
 			<li>3 player Prisoner's dilemma results in a higher payoff than what could be achieved classically</li>
 			<li>Higher payoff occurs when one player cooperates, another deflects and the final performs a quantum operation</li>
-			<li>Johnson(2000) found that if you can't assume a reliable source of qubits, the quantum advantage turns into a disadvantage after a critical level of noise (induced by increasing number of qubits)</li>
+			<li><a ref="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.63.020302">Johnson (2000)</a> found that if you can't assume a reliable source of qubits, the quantum advantage turns into a disadvantage after a critical level of noise (induced by increasing number of qubits)</li>
 		</ul>
 	</section>
 	<section>

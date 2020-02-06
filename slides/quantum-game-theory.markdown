@@ -250,7 +250,7 @@ date: 2020-01-06
 <section>
     <section data-background-iframe="https://nbviewer.jupyter.org/github/desireevl/quantum-game-theory/blob/master/notebooks/quantum_game_theory.ipynb" data-background-interactive>
     </section>
-    <section data-background-iframe="http://quantum-game.desireevl.com/" data-background-interactive>
+    <section data-background-iframe="https://quantum-game.desireevl.com/" data-background-interactive>
     </section>
 </section>
 

@@ -61,6 +61,33 @@ date: 2020-01-06
     </ul>
 </section>
 
+<!-- Quantum Game Theory -->
+<section>
+    <section>
+        <h2>Quantum Prisoner's Dilemma</h2>
+        <p>Eisert, Wilkens and Lewenstein (1999) developed a protocol to place classical games in the quantum domain.<br>J is the entangling operator: </p>
+        <img class="plain" style="padding-left: 120px;" width="20%" height="20%" src="/images/quantum-game-theory/j_operator.PNG">
+		<img class="plain" style="padding-left: 120px;" width="60%" height="60%" src="/images/quantum-game-theory/ewl.png">
+        <p class="cite">
+            From <a ref="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.83.3077">Eisert, Wilkens and Lewenstein (1999).</a>
+        </p>
+    </section>
+    <section>
+		<h2>Many Player Quantum Games</h2>
+		<ul>
+			<li><a ref="https://arxiv.org/abs/quant-ph/0007038">S. Benjamin and P. Hayden (2001)</a> used the EWL protocol to create many player games</li>
+			<li>Many player cooperative games can model scenarios like a crash in the financial market</li>
+			<li>3 player Prisoner's dilemma results in a higher payoff than what could be achieved classically</li>
+			<li>Higher payoff occurs when one player cooperates, another deflects and the final performs a quantum operation</li>
+			<li><a ref="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.63.020302">Johnson (2000)</a> found that if you can't assume a reliable source of qubits, the quantum advantage turns into a disadvantage after a critical level of noise (induced by increasing number of qubits)</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Applications</h2>
+		<p>QGT may aid in the development of search alogrithms like simulated annealing and adiabatic algorithms as they may be seen as methods for persuading individual qubits to cooperate collectively to achieve an optimal global payoff.</p>
+	</section>
+</section>
+
 <!-- Different game theory games -->
 <section>
     <section>
@@ -217,34 +244,6 @@ date: 2020-01-06
         </table>
     </section>
 </section>
-
-<!-- Quantum Game Theory -->
-<section>
-    <section>
-        <h2>Quantum Prisoner's Dilemma</h2>
-        <p>Eisert, Wilkens and Lewenstein (1999) developed a protocol to place classical games in the quantum domain.<br>J is the entangling operator: </p>
-        <img class="plain" style="padding-left: 120px;" width="20%" height="20%" src="/images/quantum-game-theory/j_operator.PNG">
-		<img class="plain" style="padding-left: 120px;" width="60%" height="60%" src="/images/quantum-game-theory/ewl.png">
-        <p class="cite">
-            From <a ref="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.83.3077">Eisert, Wilkens and Lewenstein (1999).</a>
-        </p>
-    </section>
-    <section>
-		<h2>Many Player Quantum Games</h2>
-		<ul>
-			<li><a ref="https://arxiv.org/abs/quant-ph/0007038">S. Benjamin and P. Hayden (2001)</a> used the EWL protocol to create many player games</li>
-			<li>Many player cooperative games can model scenarios like a crash in the financial market</li>
-			<li>3 player Prisoner's dilemma results in a higher payoff than what could be achieved classically</li>
-			<li>Higher payoff occurs when one player cooperates, another deflects and the final performs a quantum operation</li>
-			<li><a ref="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.63.020302">Johnson (2000)</a> found that if you can't assume a reliable source of qubits, the quantum advantage turns into a disadvantage after a critical level of noise (induced by increasing number of qubits)</li>
-		</ul>
-	</section>
-	<section>
-		<h2>Applications</h2>
-		<p>QGT may aid in the development of search alogrithms like simulated annealing and adiabatic algorithms as they may be seen as methods for persuading individual qubits to cooperate collectively to achieve an optimal global payoff.</p>
-	</section>
-</section>
-
 
 <!-- Demos -->
 <section>

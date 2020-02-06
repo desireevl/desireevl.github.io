@@ -45,7 +45,7 @@ date: 2020-01-06
             <p>Quantum Game Theory tutorial (with exercises) as Jupyter Notebook.</p>
         </div>
     </section>
-        <section data-background-iframe="http://quantum-game.desireevl.com/" data-background-interactive>
+        <section data-background-iframe="https://quantum-game.desireevl.com/" data-background-interactive>
         <div style="position: absolute; width: 30%; right: -10%; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(241, 192, 192, 0.4); color: #000000; padding: 20px; font-size: 20px; color: #4a4746; text-align: left;">
             <p>Version 2 - post Hackathon <br><br> New user interface to play different games and run on the IBMQ simulator. <br><br>Available at:<br> http://quantum-game.desireevl.com/</p>
         </div>

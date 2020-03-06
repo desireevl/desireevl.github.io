@@ -270,7 +270,7 @@ date: 2020-01-06
         <li>Further upgrades to the UI</li>
         <li>More information about QGT as you play</li>
     <p>Further reading:</p>
-    </ul>
+    <ul>
         <li>https://arxiv.org/pdf/1012.5141.pdf</li>
         <li>https://arxiv.org/pdf/quant-ph/0208069.pdf</li>
         <li>https://arxiv.org/pdf/quant-ph/0506219.pdf</li>

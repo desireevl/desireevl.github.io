@@ -45,7 +45,7 @@ date: 2020-01-06
             <p>Quantum Game Theory tutorial (with exercises) as Jupyter Notebook.</p>
         </div>
     </section>
-        <section data-background-iframe="https://quantum-game.desireevl.com/" data-background-interactive>
+        <section data-background-iframe="http://quantum-game.desireevl.com/" data-background-interactive>
         <div style="position: absolute; width: 30%; right: -10%; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(241, 192, 192, 0.4); color: #000000; padding: 20px; font-size: 20px; color: #4a4746; text-align: left;">
             <p>Version 2 - post Hackathon <br><br> New user interface to play different games and run on the IBMQ simulator. <br><br>Available at:<br> http://quantum-game.desireevl.com/</p>
         </div>
@@ -59,33 +59,6 @@ date: 2020-01-06
         <li>Payoff Matrix: A way to visualise all possible outcomes that can occur when two or more players make a strategic decision.</li>
         <li>Nash Equilibrium: A solution to a cooperative game in which each player is assumed to know the equilibrium strategies of the other players, and no player has anything to gain by changing only their own strategy.</li>
     </ul>
-</section>
-
-<!-- Quantum Game Theory -->
-<section>
-    <section>
-        <h2>Quantum Prisoner's Dilemma</h2>
-        <p>Eisert, Wilkens and Lewenstein (1999) developed a protocol to place classical games in the quantum domain.<br>J is the entangling operator: </p>
-        <img class="plain" style="padding-left: 120px;" width="20%" height="20%" src="/images/quantum-game-theory/j_operator.PNG">
-		<img class="plain" style="padding-left: 120px;" width="60%" height="60%" src="/images/quantum-game-theory/ewl.png">
-        <p class="cite">
-            From <a ref="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.83.3077">Eisert, Wilkens and Lewenstein (1999).</a>
-        </p>
-    </section>
-    <section>
-		<h2>Many Player Quantum Games</h2>
-		<ul>
-			<li><a ref="https://arxiv.org/abs/quant-ph/0007038">S. Benjamin and P. Hayden (2001)</a> used the EWL protocol to create many player games</li>
-			<li>Many player cooperative games can model scenarios like a crash in the financial market</li>
-			<li>3 player Prisoner's dilemma results in a higher payoff than what could be achieved classically</li>
-			<li>Higher payoff occurs when one player cooperates, another deflects and the final performs a quantum operation</li>
-			<li><a ref="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.63.020302">Johnson (2000)</a> found that if you can't assume a reliable source of qubits, the quantum advantage turns into a disadvantage after a critical level of noise (induced by increasing number of qubits)</li>
-		</ul>
-	</section>
-	<section>
-		<h2>Applications</h2>
-		<p>QGT may aid in the development of search alogrithms like simulated annealing and adiabatic algorithms as they may be seen as methods for persuading individual qubits to cooperate collectively to achieve an optimal global payoff.</p>
-	</section>
 </section>
 
 <!-- Different game theory games -->
@@ -245,11 +218,46 @@ date: 2020-01-06
     </section>
 </section>
 
+<!-- Quantum Game Theory -->
+<section>
+    <section>
+        <h2>Types of Quantum games</h2>
+        <ul>
+            <li>Non local games: GHZ game and CHSH game.</li>
+            <li>Quantisation of strategic games: quantising classical strategic game theory (what we did).</li>
+            <li>Quantum extensive games: classical penny matching game, where one player can use quantum strategies and the other classical.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Quantum Prisoner's Dilemma</h2>
+        <p>Eisert, Wilkens and Lewenstein (1999) developed a protocol to place classical games in the quantum domain.<br>J is the entangling operator: </p>
+        <img class="plain" style="padding-left: 120px;" width="20%" height="20%" src="/images/quantum-game-theory/j_operator.PNG">
+		<img class="plain" style="padding-left: 120px;" width="60%" height="60%" src="/images/quantum-game-theory/ewl.png">
+        <p class="cite">
+            From <a ref="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.83.3077">Eisert, Wilkens and Lewenstein (1999).</a>
+        </p>
+    </section>
+    <section>
+		<h2>Many Player Quantum Games</h2>
+		<ul>
+			<li><a ref="https://arxiv.org/abs/quant-ph/0007038">S. Benjamin and P. Hayden (2001)</a> used the EWL protocol to create many player games</li>
+			<li>Many player cooperative games can model scenarios like a crash in the financial market</li>
+			<li>3 player Prisoner's dilemma results in a higher payoff than what could be achieved classically</li>
+			<li><a ref="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.63.020302">Johnson (2000)</a> found that if you can't assume a reliable source of qubits, the quantum advantage turns into a disadvantage after a critical level of noise (induced by increasing number of qubits)</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Applications</h2>
+		<p>QGT may aid in the development of search alogrithms like simulated annealing and adiabatic algorithms as they may be seen as methods for persuading individual qubits to cooperate collectively to achieve an optimal global payoff.</p>
+	</section>
+</section>
+
+
 <!-- Demos -->
 <section>
     <section data-background-iframe="https://nbviewer.jupyter.org/github/desireevl/quantum-game-theory/blob/master/notebooks/quantum_game_theory.ipynb" data-background-interactive>
     </section>
-    <section data-background-iframe="https://quantum-game.desireevl.com/" data-background-interactive>
+    <section data-background-iframe="http://quantum-game.desireevl.com/" data-background-interactive>
     </section>
 </section>
 
@@ -259,9 +267,12 @@ date: 2020-01-06
     <p>Suggestions are welcome. Hopeful additions:</p>
     <ul>
 		<li>Incorporate Jupyter notebook into Qiskit tutorials</li>
-        <li>Ability to run the circuits on a real IBMQ device</li>
-        <li>Option to view the payoff table on the results page</li>
         <li>Further upgrades to the UI</li>
         <li>More information about QGT as you play</li>
+    <p>Further reading:</p>
+    </ul>
+        <li>https://arxiv.org/pdf/1012.5141.pdf</li>
+        <li>https://arxiv.org/pdf/quant-ph/0208069.pdf</li>
+        <li>https://arxiv.org/pdf/quant-ph/0506219.pdf</li>
     </ul>
 </section>
